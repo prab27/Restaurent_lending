@@ -1,0 +1,46 @@
+.MealContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  margin: 0 auto; /* Center the container */
+  width: auto; /* Set width to auto */
+}
+
+.CategoryContainer {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  flex-wrap: wrap;
+  margin: 0 auto; /* Center the container */
+  width: auto; /* Set width to auto */
+}
+
+.CategoryButtonWrapper {
+  margin: 0 5px; /* Adjust margin for spacing between buttons */
+}
+
+.MealItem {
+  flex: 0 1 calc(50% - 20px); /* Two items per row with spacing */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9; /* Use your theme's background color */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .MealItem {
+    flex: 0 1 calc(100% - 20px); /* Full width on smaller screens */
+  }
+}
+
+.MealImage {
+  width: 90px; /* Set a fixed width for the image */
+  height: 90px; /* Set a fixed height for the image */
+  border-radius: 50%;
+}
+
+.MealDescription {
+  font-size: 14px;
+  color: #2c3e50; /* Use your theme's text color */
+}
